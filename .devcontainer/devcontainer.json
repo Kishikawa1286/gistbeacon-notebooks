@@ -1,0 +1,23 @@
+{
+	"name": "Ubuntu",
+	"image": "jupyter/datascience-notebook:latest",
+	"features": {},
+	"forwardPorts": [8888],
+	"portsAttributes": {
+		"8888": {
+			"label": "Jupyter",
+			"requireLocalPort": true,
+			"onAutoForward": "ignore"
+		}
+	},
+	"postCreateCommand": "",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+				"KevinRose.vsc-python-indent"
+			]
+		}
+	}
+}
